@@ -1,0 +1,360 @@
+/*
+	Aaron Lopez
+	09/22/2023
+	styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, article, section, aside, figure, figcation, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* style for body */
+body {
+	background-color: #990000;
+}
+
+/*style rule for box sizing applied to all elements */
+* {
+	box-sizing: border-box;
+}
+
+/* Style for header */
+header {
+	top: 0;
+	background-color: #990000;
+	color: #F3F0E6;
+	height: 150px;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+/* styles for nav */
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	margin:0px;
+	padding:0px;
+}
+
+nav li {
+	font-family: 'Concert One', sans-serif;
+	font-size: 1.5em;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #F3F0E6;
+	padding: .25em 1em;
+	border-radius: .8em;
+	background-color: #231F20;
+	display: block;
+}
+
+/* Style for moblie */
+.mobile{
+	display: block;
+}
+
+.warning {
+	color: #990000;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+/* style for main content */
+main {
+	background-color: #F3F0E6;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Asul', serif;
+}
+
+main h1, h2, h3, h4{
+	color: #990000;
+}
+
+#numpad-notation, #motion-abbreviations, #basic {
+	color: #231F20;
+}
+
+#numpad-notation img {
+	margin: auto;
+	display: block;
+	border: 8px solid #990000;
+}
+
+#intro p {
+	color: #231F20;
+}
+
+#intro h1 {
+	color: #990000;
+}
+
+#contact {
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	margin: auto;
+}
+
+.map {
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;
+}
+
+.contact-tele-email {
+	padding: .25em 1em;	
+	background-color: #990000;
+	border-radius: 8em;
+	font-size: 2em;
+}
+
+.contact-tele-email a{
+	text-decoration: none;
+	color: #F3F0E6;
+}
+
+.frame {
+	position:relative;
+	max-width: 450px;
+	margin: 2% auto;
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: #151414;
+	color: #F3F0E6;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* style rule for forms */
+legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label {
+	display: block;
+	padding-top: 2%;
+}
+
+form #submit {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 2%;
+	color: #F3F0E6;
+	background-color: #990000;
+	font-size: 1.25em;
+	border-radius: 10px;
+}
+	
+
+/* style for footer */
+footer p{
+	color: #F3F0E6;
+	text-align: center;
+}
+
+footer p a{
+	color: #F3F0E6;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 745px), print {
+	
+	/* tablet viewport: show tablet-desktop class and hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	/* tablet viewport: style rules for header */
+	header {
+		position: static;
+	}
+	
+	/* tablet viewport: style rules for nav */
+	nav li {
+		display: inline-block;
+	}
+	
+	nav li a {
+		padding: 0.1em 0.75em;
+	}
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	
+	/* tablet viewport: style rules for main */
+	#basic ul {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#basic {
+		background: linear-gradient(to right, #ccc, #F3F0E6);
+		border-top: 1px solid #990000;
+		border-bottom: 1px solid #990000;
+		padding: 1% 2%;
+	}
+	
+	.tele-link {
+		font-size: 1.25em;
+	}
+	
+	.tele-link a{
+		text-decoration: none;
+		color: #231F20;
+	}
+	
+	.map {
+		width: 600px;
+		height: 450px;
+	}
+	/* tablet viewport: style rules for tables */
+	table {
+		border: 1px solid #231F20;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	
+	caption{
+		font-size: 1.5em;
+	}
+	
+	th, td {
+		padding: 1%;
+		border: 1px solid #231F20;
+	}
+	
+	th {
+		background-color: #990000;
+		color: #F3F0E6;
+		font-size: 1.25em;
+	}
+	
+	tr:nth-child(odd) {
+		background-color: #D97D8C;
+	}
+	/* tablet viewport: style rules for forms */
+	form{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* media query of desktop viewport */
+@media screen and (min-width: 1015px), print {
+	
+	/* desktop viewport: style rules for header */
+	header {
+		width: 26%;
+		float: left;
+		padding-bottom: 0;
+	}
+	
+	/* desktop viewport: style rule for nav*/
+	nav {
+		background-color: #990000;
+		width: 70%;
+		float: right;
+		margin: 2em 1em 0 0;
+	}
+	
+	nav ul {
+		text-align: right;
+	}
+	
+	nav li {
+		border: none;
+	}
+	
+	
+	nav li a:hover {
+		color: #231F20;
+		background-color: #F3F0E6;
+	}
+	
+	/* desktop viewport: style rule for main */
+	main {
+		clear: left;
+	}
+	
+	#numpad-notation, #motion-abbreviations {
+		width: 45%;
+		float: left;
+		margin: 0 2%;
+	}
+	
+	#basic{
+		clear:left;
+	}
+	/* desktop viewport: style rules for forms */
+	form {
+		width: 95%;
+	}
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+	}
+	
+	.btn {
+		grid-column: 1 / span 2;
+	}
+}
+
+/* media query for large desktop */
+@media screen and (min-width: 1921px) {
+	
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+	
+}
+
+/* media query for print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+	
+}
