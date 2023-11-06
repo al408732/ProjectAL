@@ -32,10 +32,35 @@ header img {
 	margin: 0 auto;
 }
 
-/* styles for nav */
-nav {
+/* styles for hamburger nav */
+.mobile-nav a {
+	color: #F3F0E6;
+	border-radius: .8em;
+	background-color: #231F20;
+	text-align: center;
+	font-family: 'Concert One', sans-serif;
+	font-size: 2em;
+	text-decoration: none;
+	display: block;
+	margin-top: 2%;
 	padding: 1%;
 	margin-bottom: 1%;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* show mobile class and hide tablet-desktop and menu-links */
+.mobile {
+	display: block;
+}
+
+.tablet-desktop, #menu-links {
+	display: none;
 }
 
 nav ul {
@@ -192,7 +217,7 @@ footer p a{
 		display: block;
 	}
 	
-	.mobile {
+	.mobile, .mobile-nav {
 		display: none;
 	}
 	
@@ -202,12 +227,33 @@ footer p a{
 	}
 	
 	/* tablet viewport: style rules for nav */
+	nav {
+		padding: 1%;
+		margin-bottom: 1%;
+	}
+
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+		margin:0px;
+		padding:0px;
+	}
+	
 	nav li {
+		font-family: 'Concert One', sans-serif;
+		font-size: 1.5em;
+		margin-top: 1%;
+		margin-bottom: 1%;
 		display: inline-block;
 	}
 	
 	nav li a {
-		padding: 0.1em 0.75em;
+		text-decoration: none;
+		color: #F3F0E6;
+		padding: .25em 1em;
+		border-radius: .8em;
+		background-color: #231F20;
+		display: block;
 	}
 	
 	.grid {
@@ -276,6 +322,27 @@ footer p a{
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
+	/* Tablet animations */
+	@-webkit-keyframes text-animation {
+		0% { font-size: 1.5em; }
+		50% { font-size: 2em; }
+		100% { font-size: 1.5em }
+	}
+	
+	@keyframes text-animation {
+		0% { font-size: 1.5em; }
+		50% { font-size: 2em; }
+		100% { font-size: 1.5em }
+	}
+	
+	figcaption {
+		-webkit-animation-name: text-animation;
+		animation-name: text-animation;
+		-webkit-animation-duration: 6s;
+		-webkit-animation-duration: 6s;
+	}
+	
 }
 
 /* media query of desktop viewport */

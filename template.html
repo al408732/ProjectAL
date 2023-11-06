@@ -19,13 +19,28 @@ Template
 <body>
 
 	<div id="container">
+	
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav"> 
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="basic_terms.html">Basic Terms</a>
+				<a href="advance-terms.html">Advance Terms</a>
+				<a href="archetypes.html">Archetypes</a>
+				<a href="contact.html">Tips</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
 
-		<header>
+		<header id="back-to-basics-logo">
 			<a href="index.html"><img src="images/back-to-basics-logo.png" alt="Back to Basics Logo"></a>
 			
 		</header>
 		
-		<nav>
+		<!-- tablet and desktop nav -->
+		<nav class="tablet-desktop">
 			<ul>
 				<li><a href="index.html">Home</a></li> 
 				<li><a href="basic_terms.html">Basic Terms</a></li> 
@@ -50,6 +65,8 @@ Template
 		</footer>
 	
 	</div>
+	
+	<script src="scripts/script.js"></script>
 	
 </body>
 </html>
