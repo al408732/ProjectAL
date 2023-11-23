@@ -1,0 +1,4 @@
+http://www.exampledomain.com/index.html
+http://www.exampledomain.com/basic_terms.html
+http://www.exampledomain.com/archetypes.html
+http://www.exampledomain.com/contact.html

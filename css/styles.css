@@ -198,15 +198,27 @@ form #submit {
 	
 
 /* style for footer */
-footer p{
+footer .copyright{
 	color: #F3F0E6;
 	text-align: center;
+	width: 75%;
+	float: left;
 }
 
 footer p a{
 	color: #F3F0E6;
 	text-align: center;
 	text-decoration: none;
+}
+
+.social {
+	float: right;
+	width: 20%;
+}
+
+.social img{
+	display: inline-block;
+	padding: 4%;
 }
 
 /* Media query for tablet viewport */
